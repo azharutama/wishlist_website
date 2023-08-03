@@ -1,0 +1,8 @@
+.jumbotron {
+  height: 700px;
+  padding-top: 14rem;
+  background-image: url("3.jpg");
+  background-position: center top;
+  background-size: cover;
+  color: rgb(254, 255, 254);
+}
