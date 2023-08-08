@@ -6,3 +6,8 @@
   background-size: cover;
   color: rgb(254, 255, 254);
 }
+
+.navbar-nav {
+  display: flex;
+  justify-content: flex-end;
+}

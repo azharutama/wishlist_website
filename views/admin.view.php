@@ -18,7 +18,7 @@
         <td><?= $w["wish"]; ?></td>
         <td><?= $w["place"]; ?></td>
         <td><?= $w["reason"]; ?></td>
-        <td><a class="btn btn-primary" href="jadwal.php" role="button">ubah</a> | <a class="btn btn-danger" href="#" role="button">hapus</a></td>
+        <td><a class="btn btn-primary" href="ubah.php?id=<?= $w["id"]; ?>" role="button">ubah</a> | <a class="btn btn-danger" href="hapus.php?id=<?= $w["id"]; ?>" role="button" onclick="return ('yakinn??') ">hapus</a></td>
       </tr>
     <?php endforeach; ?>
   </table>

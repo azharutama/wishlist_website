@@ -36,8 +36,36 @@ function tambah($data)
   //upload gambar
   $query = "INSERT INTO wish
 				VALUES
-			  r(null, '$wish', '$place', '$reason')
+			  (null, '$wish', '$place', '$reason')
 			";
+  mysqli_query($conn, $query);
+
+  return mysqli_affected_rows($conn);
+}
+
+function hapus($id)
+{
+  $conn = koneksi();
+  $query = "DELETE FROM wish WHERE id = $id";
+
+  mysqli_query($conn, $query);
+}
+
+function ubah($data)
+{
+  $conn = koneksi();
+
+  $id = $data["id"];
+  $wish = $data["wish"];
+  $place = $data["place"];
+  $reason = $data["reason"];
+
+  //upload gambar
+  $query = "UPDATE wisH SET
+			  wish= '$wish',
+        place= '$place',
+        reason= '$reason'
+			WHERE id= '$id' ";
   mysqli_query($conn, $query);
 
   return mysqli_affected_rows($conn);
