@@ -9,7 +9,7 @@
       <th>Wish</th>
       <th>Place</th>
       <th>Reason</th>
-      <th>update</th>
+      <th>update or delete</th>
     </tr>
     <?php $i = 1; ?>
     <?php foreach ($wish as $w) : ?>
@@ -22,6 +22,6 @@
       </tr>
     <?php endforeach; ?>
   </table>
-  <a class="btn btn-dark" href="jadwal.php" role="button">tambah</a>
+  <a class="btn btn-dark" href="jadwal.php" role="button">Tambah</a>
 </div>
 <?php require 'partials/footer.php'; ?>
